@@ -11,7 +11,7 @@ class Post extends Component {
       }
     }
     handleClick (e) {
-       let body = prompt("Enter new body");
+       let body = prompt("What's up?");
 this.setState({
 body: body
 })

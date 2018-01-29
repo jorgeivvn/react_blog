@@ -10,6 +10,12 @@ class Post extends Component {
         comments: ['what the??', 'yassss', 'nah.']
       }
     }
+    handleClick (e) {
+       let body = prompt("Enter new body");
+this.setState({
+body: body
+})
+}
   render() {
     return (
       <div className="Post">
@@ -38,7 +44,7 @@ class Post extends Component {
           return <Comment body={comment} />
         })}
         </p>
-
+        <button onClick={(e) => this.handleClick(e)}>Click Right Here, Playa!</button>
 
         </div>
     );
